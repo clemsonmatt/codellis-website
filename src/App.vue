@@ -1,30 +1,41 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view />
 </template>
 
 <style>
+@font-face {
+  font-family: 'CapitalPoster';
+  src: url('~@/assets/fonts/Capital-Poster.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AlbertSans';
+  src: url('~@/assets/fonts/AlbertSans-Regular.ttf') format('truetype');
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: AlbertSans, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0e4168;
+  background-color: #ffffff;
+  /* color: #101b30; */
 }
 
-nav {
-  padding: 30px;
+.hero {
+  @apply uppercase text-7xl md:text-8xl lg:text-9xl font-['CapitalPoster'];
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.section {
+  @apply uppercase text-6xl md:text-7xl lg:text-8xl font-['CapitalPoster'];
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.bg-dark {
+  background-color: #0e4168;
+  /* background-color: #101b30; */
+}
+.btn-custom {
+  @apply bg-slate-200 py-5 px-10 rounded-full uppercase shadow-xl font-semibold;
+}
+.card {
+  @apply p-10 shadow-2xl rounded-2xl bg-white mx-4 md:mx-0;
 }
 </style>
