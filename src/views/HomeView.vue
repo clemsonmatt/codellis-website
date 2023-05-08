@@ -3,7 +3,7 @@
     <img
       alt="Logo"
       src="../assets/logo-23-horizontal.png"
-      class="w-1/3 mx-auto md:w-1/4 lg:w-1/6"
+      class="w-1/2 mx-auto md:w-1/4 lg:w-1/6"
     />
     <div class="container mx-auto my-20">
       <h1 class="hero">Custom applications</h1>
@@ -25,7 +25,10 @@
       <h1 class="section">Services</h1>
       <hr class="w-1/12 mx-auto my-10 border-slate-800" />
       <div class="card">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="lg:hidden">
+            <img alt="Logo" src="../assets/icons/website.png" class="w-1/3 mx-auto" />
+          </div>
           <div class="my-auto">
             <h3 class="mb-5 text-3xl font-semibold" id="service-website">Websites</h3>
             <ul class="text-xl">
@@ -33,13 +36,13 @@
               <li>Analytics to help you increase productivity.</li>
             </ul>
           </div>
-          <div>
+          <div class="hidden lg:inline-flex">
             <img alt="Logo" src="../assets/icons/website.png" class="w-1/3 mx-auto" />
           </div>
         </div>
       </div>
       <div class="mt-10 card">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid gap-4 lg:grid-cols-2">
           <div>
             <img alt="Logo" src="../assets/icons/mobile.png" class="w-1/3 mx-auto" />
           </div>
@@ -53,7 +56,10 @@
         </div>
       </div>
       <div class="mt-10 card">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="lg:hidden">
+            <img alt="Logo" src="../assets/icons/cloud.png" class="w-1/3 mx-auto" />
+          </div>
           <div class="my-auto">
             <h3 class="mb-5 text-3xl font-semibold" id="service-enterprise">Enterprise Software</h3>
             <ul class="text-xl">
@@ -61,7 +67,7 @@
               <li>Move your paper process to a digital format.</li>
             </ul>
           </div>
-          <div>
+          <div class="hidden lg:inline-flex">
             <img alt="Logo" src="../assets/icons/cloud.png" class="w-1/3 mx-auto" />
           </div>
         </div>
